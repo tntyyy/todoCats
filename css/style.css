@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'F77 Minecraft';
+    src: url("../fonts/F77\ Minecraft.ttf");
+}
+
+/* css reset */
+
+html {
+    overflow: hidden;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* css reset end */
+
+.main {
+    font-family: 'F77 Minecraft';
+    font-size: 18px;
+    background: url("../img/bg.png");
+
+    min-height: 100vh;
+    max-height: 100vh;
+
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1032px;
+    min-height: 100vh;
+    max-height: 100vh;
+
+    padding-top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+    margin-top: 88px;
+
+    flex-wrap: wrap;
+}
+
+.todo-add {
+    background: rgba(255, 255, 255, 0.4);
+    border: 8px solid #fff;
+    padding: 32px 75px 39px 75px;
+
+    text-align: center;
+
+    max-width: 456px;
+    max-height: 200px;
+}
+
+.todo-title {
+    font-size: 20px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+
+    font-family: 'F77 Minecraft';
+    font-size: 18px;
+
+    padding: 12px 16px;
+
+    border: 4px dashed #fff;
+    outline: none;
+}
+
+input::placeholder {
+    color: #fff;
+
+    font-family: 'F77 Minecraft';
+    font-size: 18px;
+}
+
+.add {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    background: transparent;
+    margin-top: 32px;
+}
+
+/* todo list */
+
+.todo-list {
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.4);
+    border: 8px solid #fff;
+    padding: 32px 64px;
+
+    text-align: left;
+
+    min-width: 455px;
+}
+
+.todo-ul {
+    padding-bottom: 32px;
+}
+
+.list-item {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.cat-1 {
+    z-index: 9999;
+    position: absolute;
+    left: 445px;
+    top: 276px;
+}
+
+.cat-1 img {
+    width: 56px;
+    height: 55px;
+}
+
+.cat-2 {
+    z-index: 9999;
+    position: absolute;
+    left: 1020px;
+    top: 265px;
+}
+
+.cat-2 img {
+    width: 67px;
+    height: 67px;
+}
+
+.cat-3 {
+    z-index: 9999;
+    position: absolute;
+    left: 1020px;
+    top: 360px;
+}
+
+/* .cat-3 img {
+    width: 56px;
+    height: 55px;
+} */
